@@ -11,5 +11,8 @@ export const getCategorias = () =>
 export const agregarGasto = (gasto) =>
   axios.post(`${BASE_URL}/gastos`, gasto).then(res => res.data)
 
+export const editarGasto = (id, gasto) =>
+  axios.put(`${BASE_URL}/gastos/${id}`, gasto).then(res => res.data)
+
 export const eliminarGasto = (id) =>
   axios.delete(`${BASE_URL}/gastos/${id}`)

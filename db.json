@@ -4,45 +4,37 @@
       "id": "1",
       "descripcion": "Almuerzo",
       "monto": 1500,
-      "categoria": "comida",
+      "categoriaId": "1",
       "fecha": "2024-11-01"
     },
     {
       "id": "2",
       "descripcion": "Juego Steam",
       "monto": 800,
-      "categoria": "ocio",
+      "categoriaId": "3",
       "fecha": "2024-11-02"
-    },
-    {
-      "descripcion": "Netflix",
-      "monto": 10000,
-      "categoria": "ocio",
-      "fecha": "2026-06-07",
-      "id": "BiKowfMozXg"
     }
   ],
   "categorias": [
     {
       "id": "1",
-      "nombre": "comida"
+      "nombre": "Comida"
     },
     {
       "id": "2",
-      "nombre": "ocio"
+      "nombre": "Transporte"
     },
     {
       "id": "3",
-      "nombre": "transporte"
+      "nombre": "Ocio"
     },
     {
       "id": "4",
-      "nombre": "salud"
+      "nombre": "Salud"
     },
     {
       "id": "5",
-      "nombre": "otro"
+      "nombre": "Otro"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }

@@ -4,7 +4,7 @@ Aplicación web desarrollada con React que permite llevar un registro personal d
 
 ## Captura de pantalla de la aplicación funcionando
 
-![Captura de la aplicación](assets/captura.png)
+<img src="./public/captura-app.png" alt="Vista de mi aplicación" width="900">
 
 ## ¿Qué hace la aplicación?
 

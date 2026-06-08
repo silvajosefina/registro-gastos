@@ -2,6 +2,10 @@
 
 Aplicación web desarrollada con React que permite llevar un registro personal de gastos.
 
+## Captura de pantalla de la aplicación funcionando
+
+![Captura de la aplicación](assets/captura.png)
+
 ## ¿Qué hace la aplicación?
 
 Permite al usuario:
@@ -28,7 +32,7 @@ Permite al usuario:
 1. Clonar el repositorio e instalar las dependencias:
 
 ```bash
-git clone https://github.com/TU_USUARIO/registro-gastos.git
+git clone https://github.com/silvajosefina/registro-gastos.git
 cd registro-gastos
 npm install
 ```

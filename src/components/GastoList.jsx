@@ -1,12 +1,18 @@
 import GastoItem from './GastoItem'
 
-const GastoList = ({ gastos, onEliminar }) => {
+const GastoList = ({ gastos, categorias, onEliminar, onEditar }) => {
   if (gastos.length === 0) return <p>No hay gastos registrados.</p>
 
   return (
-    <ul>
+    <ul className="gasto-list">
       {gastos.map(g => (
-        <GastoItem key={g.id} gasto={g} onEliminar={onEliminar} />
+        <GastoItem
+          key={g.id}
+          gasto={g}
+          categorias={categorias}
+          onEliminar={onEliminar}
+          onEditar={onEditar}
+        />
       ))}
     </ul>
   )

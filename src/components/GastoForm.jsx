@@ -3,21 +3,22 @@ import { useState } from 'react'
 const GastoForm = ({ categorias, onAgregar }) => {
   const [descripcion, setDescripcion] = useState('')
   const [monto, setMonto] = useState('')
-  const [categoria, setCategoria] = useState('')
+  const [categoriaId, setCategoriaId] = useState('')
   const [fecha, setFecha] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (!descripcion || !monto || !categoria || !fecha) return
-    onAgregar({ descripcion, monto: Number(monto), categoria, fecha })
+    if (!descripcion || !monto || !categoriaId || !fecha) return
+    onAgregar({ descripcion, monto: Number(monto), categoriaId, fecha })
     setDescripcion('')
     setMonto('')
-    setCategoria('')
+    setCategoriaId('')
     setFecha('')
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="gasto-form" onSubmit={handleSubmit}>
+      <h2>Nuevo gasto</h2>
       <input
         placeholder="Descripción"
         value={descripcion}
@@ -29,10 +30,10 @@ const GastoForm = ({ categorias, onAgregar }) => {
         value={monto}
         onChange={e => setMonto(e.target.value)}
       />
-      <select value={categoria} onChange={e => setCategoria(e.target.value)}>
-        <option value="">-- Categoría --</option>
+      <select value={categoriaId} onChange={e => setCategoriaId(e.target.value)}>
+        <option value="">Categoría</option>
         {categorias.map(c => (
-          <option key={c.id} value={c.nombre}>{c.nombre}</option>
+          <option key={c.id} value={c.id}>{c.nombre}</option>
         ))}
       </select>
       <input

@@ -13,6 +13,20 @@
       "monto": 800,
       "categoriaId": "3",
       "fecha": "2024-11-02"
+    },
+    {
+      "descripcion": "Netflix",
+      "monto": 10000,
+      "categoriaId": "3",
+      "fecha": "2026-06-07",
+      "id": "5JMwyFRJ2f4"
+    },
+    {
+      "descripcion": "Pasaje",
+      "monto": 9000,
+      "categoriaId": "2",
+      "fecha": "2026-06-09",
+      "id": "rgRlUGnxdEY"
     }
   ],
   "categorias": [
@@ -36,5 +50,6 @@
       "id": "5",
       "nombre": "Otro"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
